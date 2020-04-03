@@ -1,11 +1,9 @@
 package lsystems;
 
 public class A_AA extends LRule {
-private char []l;
+
 	
-	public A_AA() {
-		l = new char[] {'A','A'};
-	}
+	
 	@Override
 	public char getMatch() {
 		// TODO Auto-generated method stub
@@ -13,9 +11,9 @@ private char []l;
 	}
 
 	@Override
-	public char[] getBody() {
-		// TODO Auto-generated method stub
-		return l;
+public char[] getBody() {
+		
+		return new char[] {'A','A'};
 	}
 
 }

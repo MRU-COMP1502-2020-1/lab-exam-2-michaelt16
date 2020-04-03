@@ -2,11 +2,7 @@ package lsystems;
 
 public class A_AB extends LRule {
 	
-	private char []l;
 	
-	public A_AB() {
-		l = new char[] {'A','B'};
-	}
 	@Override
 	public char getMatch() {
 		
@@ -14,9 +10,10 @@ public class A_AB extends LRule {
 	}
 
 	@Override
-	public char[] getBody() {
+public char[] getBody() {
 		
-		return  l;
+		return new char[] {'A','B'};
+	}
 	}
 
-}
+
