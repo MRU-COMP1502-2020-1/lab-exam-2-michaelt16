@@ -33,7 +33,7 @@ public class LLineTest {
 		line.process();
 		assertEquals("Expected output A", "A", line.toString());
 		
-	}
+   }
 	
 	@Test
 	public void testA_AAprocess() throws LSystemSymbolException, LSystemLengthException {
@@ -89,7 +89,7 @@ public class LLineTest {
 	public void testLSystemSymbolException() {
 		char[] test = {'A'};
 		Set<LRule> rules = new HashSet<LRule>();
-		rules.add(new A_Q());
+		//rules.add(new A_Q());
 		LLine line = new LLine(test, rules);
 		boolean caughtClean = false;
 		try {
